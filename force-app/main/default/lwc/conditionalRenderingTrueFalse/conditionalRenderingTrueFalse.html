@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <template if:true={fname}>
+            <h1>First name is Bharath</h1>
+        </template>
+        <template if:false={lname}>
+            <h1>Last name is Nachappa</h1>
+        </template>
+        <lightning-button label="Show first name" onclick={showFirstName}>
+        </lightning-button>
+    
+        <lightning-button label="Show last name" onclick={showLastName}>
+        </lightning-button>
+    </lightning-card>
+  
+</template>

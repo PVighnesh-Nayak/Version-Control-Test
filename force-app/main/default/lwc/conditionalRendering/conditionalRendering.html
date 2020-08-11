@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="ConditionalRendering" icon-name="custom:custom14">
+        <div class="slds-m-around_medium">
+            </p>Click the checkbox to get today's tasks</p>
+            <lightning-input type="checkbox" label="Show details" onchange={handleChange}></lightning-input>
+            <template if:true={areDetailsVisible}>
+                <div class="slds-m-vertical_medium">
+                    1. Task 1
+                    <br>
+                    2. Task 2
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
